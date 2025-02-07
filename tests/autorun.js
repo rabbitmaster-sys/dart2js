@@ -22,7 +22,7 @@ a[c]=function(){if(a[b]===u){a[b]=d()}a[c]=function(){return this[b]}
 return a[b]}}function lazyFinal(a,b,c,d){var u=a
 a[b]=u
 a[c]=function(){if(a[b]===u){var t=d()
-if(a[b]!==u){A.p(b)}a[b]=t}var s=a[b]
+if(a[b]!==u){A.q(b)}a[b]=t}var s=a[b]
 a[c]=function(){return s}
 return s}}function makeConstList(a){a.$flags=7
 return a}function convertToFastObject(a){function t(){}t.prototype=a
@@ -51,15 +51,19 @@ return a}var hunkHelpers=function(){var u=function(a,b,c,d,e){return function(f,
 return{inherit:inherit,inheritMany:inheritMany,mixin:mixinEasy,mixinHard:mixinHard,installStaticTearOff:installStaticTearOff,installInstanceTearOff:installInstanceTearOff,_instance_0u:u(0,0,null,["$0"],0),_instance_1u:u(0,1,null,["$1"],0),_instance_2u:u(0,2,null,["$2"],0),_instance_0i:u(1,0,null,["$0"],0),_instance_1i:u(1,1,null,["$1"],0),_instance_2i:u(1,2,null,["$2"],0),_static_0:t(0,null,["$0"],0),_static_1:t(1,null,["$1"],0),_static_2:t(2,null,["$2"],0),makeConstList:makeConstList,lazy:lazy,lazyFinal:lazyFinal,updateHolder:updateHolder,convertToFastObject:convertToFastObject,updateTypes:updateTypes,setOrUpdateInterceptorsByTag:setOrUpdateInterceptorsByTag,setOrUpdateLeafTags:setOrUpdateLeafTags}}()
 function initializeDeferredHunk(a){x=v.types.length
 a(hunkHelpers,v,w,$)}var A={
-k(a,b){return A.a(a.tR,b)},
-j(a,b){return A.a(a.eT,b)},
+d(a){if(typeof dartPrint=="function"){dartPrint(a)
+return}if(typeof console=="object"&&typeof console.log!="undefined"){console.log(a)
+return}if(typeof print=="function"){print(a)
+return}throw"Unable to print message: "+String(a)},
+l(a,b){return A.a(a.tR,b)},
+k(a,b){return A.a(a.eT,b)},
 a(a,b){var u,t,s=Object.keys(b),r=s.length
 for(u=0;u<r;++u){t=s[u]
 a[t]=b[t]}},
-c(){return 42}}
+c(){A.d("Hellow world")}}
 var w=[A]
 var $={}
-var v={typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{n:"int",m:"double",o:"num",i:"String",l:"bool",f:"Null",d:"List",h:"Object",e:"Map"},mangledNames:{},types:[],arrayRti:Symbol("$ti")};(function nativeSupport(){hunkHelpers.setOrUpdateInterceptorsByTag({})
+var v={typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{o:"int",n:"double",p:"num",j:"String",m:"bool",h:"Null",e:"List",i:"Object",f:"Map"},mangledNames:{},types:[],arrayRti:Symbol("$ti")};(function nativeSupport(){hunkHelpers.setOrUpdateInterceptorsByTag({})
 hunkHelpers.setOrUpdateLeafTags({})})()
 convertAllToFastObject(w)
 convertToFastObject($);(function(a){if(typeof document==="undefined"){a(null)
